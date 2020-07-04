@@ -17,7 +17,7 @@
 \linha{ilustração©}{\copyrightilustracao}\smallskip
 \linha{título original}{\titulooriginal}
 \linha{edição consultada}{\edicaoconsultada}
-\linha{primeira edição}{\primeiraedicao}
+%\linha{primeira edição}{\primeiraedicao}
 \linha{agradecimentos}{\agradecimentos}
 \linha{indicação}{\indicacao}\smallskip
 \linha{edição}{\edicao}
@@ -26,8 +26,8 @@
 \linha{revisão}{\revisao}
 \linha{preparação}{\preparacao}
 \linha{iconografia}{\iconografia}
-\linhalayout{projeto da coleção}{Lucas Kröeff}
-\linha{capa}{\capa}
+\linhalayout{capa e projeto gráfico}{Lucas Kröeff}
+%\linha{capa}{\capa}
 \linha{imagem da capa}{\imagemcapa}\smallskip
 \linha{ISBN}{\ISBN}\smallskip
 \begingroup\tiny
@@ -67,11 +67,11 @@ Foi feito o depósito legal.\\\endgroup
 %logos
 \vfill
 \normalsize
-%\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{\logo}\hfill\logoum{}\\ São Paulo\_\the\year}}{\logoum\break{} São Paulo\_\the\year}
+\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{\logo}\hfill\logoum{}\\ São Paulo\quad\the\year}}{\logoum\break{} São Paulo\quad\the\year}
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
-\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-0.2\textheight}\mbox{} \vfill
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-0.1\textheight}\mbox{} \vfill
 \baselineskip=.92\baselineskip
 \IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
 \ifdef{\resumo}{\resumo\par}{}
