@@ -3,7 +3,7 @@
 \usepackage[largepost]{hedraoptions} %% << %%%%%%%%%%%%%%%%
 \usepackage[baruch]{hedrastyles}
 \usepackage[xetex,chicagofootnotes]{tipografia}
-\usepackage[standart,sempontinhos]{toc}
+\usepackage[standart,compontinhos]{toc}
 \usepackage{hedraextra}
 \usepackage{penalidades}
 \usepackage{graficos}
@@ -24,6 +24,33 @@
 
 \usepackage{makeidx,hedraindex}  % cria índice
 \makeindex	
+
+%\usepackage{fancyhdr}
+%\fancypagestyle{hedra}{%
+%\renewcommand\headrulewidth{0pt}
+  %\fancyhf{}%
+  %\fancyhead[LE]{\setlength{\unitlength}{.9mm}
+  %\begin{picture}(0,0)
+    %\put(-4,-5.4){\makebox(0,0)[r]{
+      %\begin{tabular}{@{}l@{ }r@{}}
+        %\makebox[5mm][l]{\thepage}
+      %\end{tabular}
+    %}}
+  %\end{picture}}%
+  %\fancyhead[RE]{}%
+  %\fancyhead[LO]{}%
+  %\fancyhead[RO]{\setlength{\unitlength}{.9mm}%
+  %\makebox{
+  %\begin{picture}(0,0)%
+    %\put(12,-5.4){%
+    %\makebox(0,0)[r]{%
+      %\begin{tabular}{@{}l @{ }r @{}}
+        %\makebox[5mm][r]{\thepage}
+      %\end{tabular}%
+    %}}%
+  %\end{picture}%
+  %}}%
+%}
 
 \makeatletter
 
@@ -165,9 +192,9 @@ BoldFont = Formular-Bold.otf]
 %  [#1\hfil\hbox{}\protect\linebreak{\itshape#1}]%
 %  {#1\\[2ex]\Large\itshape#2}%
 %}
+\usepackage[switch,modulo,pagewise]{lineno}
 
 \begin{document}
-
 \include{INPUTS}
 
 \printindex

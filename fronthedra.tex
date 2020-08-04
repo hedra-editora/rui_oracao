@@ -1,9 +1,9 @@
 \AtBeginDocument{%
 \begingroup\pagestyle{empty}\raggedright\parindent0pt
 {\Formular{\Huge{\titulagemfront{}}}}
-\vspace{11.25mm}
+\vspace{15mm}
 
-\LARGE{\autor}
+{\Formular\LARGE{\autor}}
 \vfill
 \clearpage
 
@@ -58,7 +58,7 @@ Foi feito o depósito legal.\\\endgroup
 {\Formular{\Huge{\titulagem}}}
 \vspace{11.25mm}
 
-{\LARGE{\autor} \par}%\vspace{1.5ex}}
+{\Formular\LARGE{\autor} \par}%\vspace{1.5ex}}
 \vspace{6cm} %9.3cm
 \ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
 \ifdef{\introdutor}{{\small {\introdutor} (\textit{prefácio})} \par}{}
@@ -72,9 +72,9 @@ Foi feito o depósito legal.\\\endgroup
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
-\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-0.1\textheight}\mbox{} \vfill
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-0.2\textheight}\mbox{} \vfill
 \baselineskip=.92\baselineskip
-\IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
+\IfFileExists{PRETAS.tex}{\input{PRETAS}}{%
 \ifdef{\resumo}{\resumo\par}{}
 \ifdef{\sobreobra}{\sobreobra}{}
 \ifdef{\sobreautor}{\mbox{}\vspace{4pt}\newline\sobreautor}{}
